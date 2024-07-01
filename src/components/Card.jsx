@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { IoSunny } from 'react-icons/io5';
+import { IoInvertMode } from "react-icons/io5";
 import { Stack } from 'react-bootstrap';
 import '../App.css';
 import { IoAddOutline } from "react-icons/io5";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import InputGroup from 'react-bootstrap/InputGroup';
 import { RiCloseCircleFill } from "react-icons/ri";
 
@@ -73,8 +72,7 @@ export default function Card( {onModeChange, isLightMode} ) {
             <Stack direction={'horizontal'}>
                 <h1 className="fw-bold text-white">TO DO</h1>
                 <div className="d-flex ms-auto align-items-center gap-5">
-                    <IoSunny onClick={toggleMode} className="text-white " size={70} />
-                    <BsFillMoonStarsFill onClick={toggleMode} size={50} />
+                    <IoInvertMode  onClick={toggleMode} className="text-white " size={70} />
                 </div>
             </Stack>
             <Stack className='d-flex gap-3'>
